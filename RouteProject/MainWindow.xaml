@@ -1,0 +1,19 @@
+﻿<Window x:Class="RouteProject.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RouteProject"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="790">
+    <Grid>
+        <DataGrid x:Name="dtGrd" HorizontalAlignment="Left" Height="372" Margin="10,37,0,0" VerticalAlignment="Top" Width="232"/>
+        <Button x:Name="gnrtNmbr" Content="Generate Values" HorizontalAlignment="Left" Margin="262,345,0,0" VerticalAlignment="Top" Width="260" Height="54" Click="GnrtNmbr_Click"/>
+        <Button x:Name="nsrtBtn" Content="Insert random numbers" HorizontalAlignment="Left" Margin="282,93,0,0" VerticalAlignment="Top" Width="202" Click="NsrtBtn_Click" Height="60"/>
+        <DataGrid x:Name="dtGrdOrigin" HorizontalAlignment="Left" Height="372" Margin="541,37,0,0" VerticalAlignment="Top" Width="232"/>
+        <Button Content="Sorting GUI" HorizontalAlignment="Left" Margin="282,216,0,0" VerticalAlignment="Top" Width="202" Height="60" Click="Button_Click"/>
+        <Label Content="Dynamic List" HorizontalAlignment="Left" Height="27" Margin="88,10,0,0" VerticalAlignment="Top" Width="174"/>
+        <Label Content="Original List" HorizontalAlignment="Left" Height="27" Margin="623,10,-15,0" VerticalAlignment="Top" Width="174"/>
+
+    </Grid>
+</Window>
