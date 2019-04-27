@@ -17,11 +17,13 @@ using System.Windows.Shapes;
 
 namespace RouteProject
 {
-    /// <summary>
-    /// Interaction logic for MainWindow.xaml
-    /// </summary>
+ 
+    // GitHub repo test
+
     public partial class MainWindow : Window
     {
+        public static int abcda = 1;
+
         static MongoClient client = new MongoClient();
         // TmpRoutes (use projectLabRoutes ; db.routes )
         static IMongoDatabase db = client.GetDatabase("projectLabRoutes");
