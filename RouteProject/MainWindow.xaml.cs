@@ -62,8 +62,20 @@ namespace RouteProject
         public void ReadOriginAllDocuments()
         {
             List<RoutesOriginal> listOrigin = collectionOrigin.AsQueryable().ToList<RoutesOriginal>();
+            RoutesOriginal r;
+            if (listOrigin.Count() == 0)
+            {
+                collectionOrigin = db.GetCollection<RoutesOriginal>("routesOrigin");
+                r = new RoutesOriginal(5, 5);
+                collectionOrigin.InsertOne(r);
+
+
+                listOrigin = collectionOrigin.AsQueryable().ToList<RoutesOriginal>();
+
+            }
+
             dtGrdOrigin.ItemsSource = listOrigin;
-            RoutesOriginal r = (RoutesOriginal)dtGrdOrigin.Items.GetItemAt(0);
+             r = (RoutesOriginal)dtGrdOrigin.Items.GetItemAt(0);
         }
 
         public MainWindow()
@@ -87,7 +99,7 @@ namespace RouteProject
 
             System.Threading.Thread.Sleep(1000);
             // 15 és 75 között generál egy darabszámot
-            int numbers = rnd.Next(15, 75);
+            int numbers = 15; // rnd.Next(15, 75);
             int nmb;
 
 
