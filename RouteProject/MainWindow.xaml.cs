@@ -99,7 +99,7 @@ namespace RouteProject
 
             System.Threading.Thread.Sleep(1000);
             // 15 és 75 között generál egy darabszámot
-            int numbers = 15; // rnd.Next(15, 75);
+            int numbers = rnd.Next(15, 75);
             int nmb;
 
 
@@ -306,7 +306,6 @@ namespace RouteProject
 
 
                 int h = 0;
-                // csak 1-et lehet beszúrni, valami gázos vele
                 while (h < 1) // rndInsNumb)
                 {
                     //List<Routes> list = collection.AsQueryable().ToList<Routes>();
