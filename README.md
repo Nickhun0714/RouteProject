@@ -1,4 +1,4 @@
-# RouteProject
+# Óbudai egyetem - RouteProject
 ForUniversity
 Used technologies:
 - MongoDB
